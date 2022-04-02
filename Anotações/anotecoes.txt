@@ -1,0 +1,18 @@
+CSS - FLEX BOX:
+
+Propriedades do Flex container:
+    *Display :
+    *Flex-direction>:
+    *Flex-wrap:
+    *Flex-flow:
+    *Justify-content:
+    *Align-items:
+    *Align-content:
+
+Propriedades do Flex Item:  
+    *Flex-grow:
+    *Flex-basis:
+    *Flex-shrink:
+    *flex:
+    *order:
+    *Align-self:
