@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     
+    
 }
 
 ul{
@@ -47,22 +48,38 @@ header .menu{
     justify-content: space-between;
 }
 /**/
+#myVideo {
+  position: relative;
+  height: 20%;
+  width: 70%;
 
-.apresentacao{
-    height: 100vh;
-    align-items: center;
-    justify-content: space-between;
 }
-.apresentacao .texto-apresentacao{
-    min-height: 200px;
+.carousel-tamanho{
+    height: 100px;
+    margin-bottom: 100vh;
+}
+.apresentacao{
+    height: 50vh !important;
+    align-items: center;
+    
+    
+   
+}
+
+.texto-apresentacao h1{
+    color: black;
+    font-size: 100px;
     
 }
-.texto-apresentacao h1{
-    color:#122A45;
-    font-size: 48px;
-    margin-bottom: 10px;
+.texto-apresentacao p{
+    color: black;
+    margin-bottom: 100px;
+    font-size: 50px;
+    
 }
-
+.texto-apresentacao{
+    margin-bottom: 50vh;
+}
 .btn{
     background-color:#122A45;
     color: white;
@@ -82,8 +99,9 @@ header .menu{
 }
 
 #quem-somos{
+    
     flex-direction: row-reverse;
-    height: 100vh;
+    height: 50vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -108,11 +126,13 @@ header .menu{
 }
 #quem-somos img{
     min-width:420px;
+    
 }
 /**/
 .container-externo{
     background-color: #122A45;
     width: 100%;
+    margin-top: 20px;
 }
 
 #servicos{
@@ -135,13 +155,13 @@ header .menu{
     text-align: center;
 }
 .item-servico a{
-    width: 220px;
+    width: 150px;
     background-color: white;
     border-radius: 30px;
     height: 50px;
     text-align: center;
     margin-top: 20px;
-    line-height:50px;
+    line-height:30px;
     padding: 5px 10px;
     color: #122A45;
     font-size: 12px;
@@ -162,7 +182,7 @@ header .menu{
 
 #planos{
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
     padding-top: 50px;
 }
 #planos h2{
@@ -272,3 +292,4 @@ footer .footer{
         margin-bottom: 20px;
     }
 }
+
