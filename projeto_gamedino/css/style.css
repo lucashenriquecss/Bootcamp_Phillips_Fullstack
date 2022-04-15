@@ -1,0 +1,17 @@
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(58, 126, 38);
+}
+
+
+.obstacle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: red;
+}
