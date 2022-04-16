@@ -2,14 +2,15 @@ const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
 
 let isJumping =false;
+let position = 0; // posição inicial
 
 function handlerkeyup(event) {
     if(event.keyCode === 32){
-        /* if (!isJumping) {           
+        if (!isJumping) {           
             jump();
             console.log(jump())
-        } */
-        jump()
+        }
+        
     }
     if(event.keyCode === 65){
         console.log('left')
@@ -30,9 +31,9 @@ function handlerkeyup(event) {
 function shoot() {  
 }
 
-function jump() {
-    let position = 0; // posição inicial
+function jump() {  
     isJumping = true;
+
     let upInterval = setInterval(() => {
         if (position >= 150) {
             clearInterval(upInterval);
@@ -67,6 +68,11 @@ function createObstacle() {
         if (obstaclePosition <-60) {
             clearInterval(lefInterval);
             background.removeChild(obstacle);
+        }else if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60){
+           //Game over
+           clearInterval(lefInterval);
+           document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+           
         }else{
             obstaclePosition -= 8.5; // movimentação mais rapida para esquerda 
             obstacle.style.left = obstaclePosition + 'px';
