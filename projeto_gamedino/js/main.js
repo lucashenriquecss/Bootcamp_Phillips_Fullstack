@@ -8,38 +8,27 @@ function handlerkeyup(event) {
     if(event.keyCode === 32){
         if (!isJumping) {           
             jump();
-            console.log(jump())
+            //console.log(jump())
         }
+       
         
     }
-    if(event.keyCode === 65){
-        console.log('left')
-    }
-    if(event.keyCode === 68){
-        console.log('right')
-    }
-    /* if(event.keyCode === 83){
-        console.log('down')
-    } */
-    if(event.keyCode === 76){
-        console.log('atirou')
-    }
+
    
 }
 
 
-function shoot() {  
-}
 
 function jump() {  
     isJumping = true;
 
     let upInterval = setInterval(() => {
-        if (position >= 150) {
+        if (position >= 200) {
             clearInterval(upInterval);
             let downInterval = setInterval(() => {
                 if (position <=0) {
                     clearInterval(downInterval);
+                    isJumping=false;
                 }else{
                     position -=20;
                     dino.style.bottom = position + 'px';
@@ -60,7 +49,7 @@ function createObstacle() {
 
 
     obstacle.classList.add('obstacle');
-    obstacle.style.left = 1000 + 'px';
+    obstacle.style.left = 1000  + 'px';
     background.appendChild(obstacle);
 
     let lefInterval = setInterval(() => {
@@ -77,7 +66,7 @@ function createObstacle() {
             obstaclePosition -= 8.5; // movimentação mais rapida para esquerda 
             obstacle.style.left = obstaclePosition + 'px';
         }
-    }, 20);
+    }, 30);
 
     setTimeout(createObstacle, randomTime);
 }

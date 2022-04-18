@@ -7,6 +7,7 @@
     position: absolute;
     bottom: 0;
     background-image: url("/projeto_gamedino/assets/img/dino.png");
+    filter:  drop-shadow(0 0 0 red);
 }
 
 
@@ -15,7 +16,8 @@
     width: 60px;
     height: 60px;
     bottom: 0;
-    background-image: url('/projeto_gamedino/assets/img/dino.png');
+    background-image: url('/projeto_gamedino/assets/img/cactus.png');
+
 }
 
 .game-over{
@@ -28,21 +30,21 @@
 
 /* Animações com css */
 
-@keyframes slideright{
+/* @keyframes slideright{
     from{
         background-position: 70000%;
     }   
     to{
         background-position: 0;
     }
-}
+} */
 .background{
     position: absolute;
     bottom: 0;
-    background-image:url('/projeto_gamedino/assets/img/vecteezy_forest-game-background_.jpg');
-    background-repeat: repeat-x;
+    background-image:url('/projeto_gamedino/assets/img/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: slideright 70000s infinite linear;
     width: 100%;
-    
-    height: 100vh;
+    height: 100%;
 }
